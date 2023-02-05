@@ -4,6 +4,9 @@ import arc.graphics.*;
 import arc.math.*;
 import arc.struct.*;
 import mindustry.*;
+import mindustry.ctype.*;
+import mindustry.content.*;
+import mindustry.content.Fx;
 import mindustry.entities.*;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
@@ -36,10 +39,11 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
-import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
-
-import static mindustry.type.ItemStack.*;
+import static mindustry.type.ItemStack.with;
+import mindustry.type.Item;
+import mindustry.type.Liquid;
+import mindustry.type.LiquidStack;
 
 public class MEBlocks {
 	public static Block
