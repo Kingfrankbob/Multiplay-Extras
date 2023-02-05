@@ -143,7 +143,7 @@ public class MEBlocks {
 			reload = 30f;
 			range = 120f;
 			consumePower(4f);
-			 name = "Lightning Enhancer";
+// 			 name = "Lightning Enhancer";
 			shootSound = Sounds.blaster;
       
       
@@ -206,7 +206,7 @@ public class MEBlocks {
                 lightningLength = 50;
                 collidesAir = false;
                 ammoMultiplier = 10f;
-		name = "Arcaic Release";
+// 		name = "Arcaic Release";
                 //for visual stats only.
                 buildingDamageMultiplier = 0.25f;
 
