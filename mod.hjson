@@ -1,8 +1,8 @@
 displayName: "Multiplayer Extras"
-name: "m-e"
+name: "me"
 author: "Em See"
-main: "m-e.Main"
-description: "A Mindustry Java mod template."
+main: "me.MEModLoad"
+description: "Multiplayer but better eks dee"
 version: v<0.1
 minGameVersion: 140
 java: true
