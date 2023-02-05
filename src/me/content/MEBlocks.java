@@ -76,7 +76,7 @@ public class MEBlocks {
 			size = 2;
 			health = 200;
 			reload = 30f;
-			range = 120f;
+			range = 200f;
 			consumePower(4f);
 			shootSound = Sounds.blaster;
       
@@ -109,7 +109,7 @@ public class MEBlocks {
                     shootEffect = Fx.magmasmoke;
                     hitEffect = Fx.hitLancer;
                     smokeEffect = Fx.smokeCloud;
-                    trailEffect = Fx.flakExplosion;
+                    trailEffect = Fx.magmasmoke;
                     despawnEffect = Fx.instBomb;
                     trailSpacing = 20f;
                     damage = 60;
@@ -137,15 +137,15 @@ public class MEBlocks {
             requirements(Category.turret, with(Items.copper, 75, Items.lead, 25, Items.coal, 50, Items.sand, 50));
             shootType = new LightningBulletType(){{
                 damage = 20;
-                lightningLength = 50;
+                lightningLength = 25;
                 collidesAir = false;
                 ammoMultiplier = 10f;
 // 		name = "Arcaic Release";
                 //for visual stats only.
-                buildingDamageMultiplier = 0.25f;
 
                 lightningType = new BulletType(0.0001f, 0f){{
                     lifetime = Fx.lightning.lifetime;
+		    lightning = 10;
                     hitEffect = Fx.hitLancer;
                     despawnEffect = Fx.none;
                     status = StatusEffects.shocked;
@@ -160,7 +160,7 @@ public class MEBlocks {
             shootCone = 60f;
             rotateSpeed = 6f;
             targetAir = false;
-            range = 100f;
+            range = 150f;
             shootEffect = Fx.lightningShoot;
             heatColor = Color.black;
             recoil = 1.7f;
