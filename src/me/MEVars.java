@@ -1,7 +1,7 @@
 package me;
 
 import me.content.*;
-import me.entities.SWEntityMapping;
+// import me.entities.SWEntityMapping;
 
 public class MEVars {
 
