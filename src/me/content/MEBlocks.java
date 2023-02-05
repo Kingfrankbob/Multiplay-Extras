@@ -105,26 +105,26 @@ public class MEBlocks {
 //                 despawnSound = Sounds.dullExplosion;
 //                 shootSound = Sounds.cannon;
 
-                fragBullet = intervalBullet = new PointBulletType(){{
-                    shootEffect = Fx.instShoot;
-                    hitEffect = Fx.instHit;
+                fragBullet = new PointBulletType(){{
+                    shootEffect = Fx.magmasmoke;
+                    hitEffect = Fx.hitLancer;
                     smokeEffect = Fx.smokeCloud;
-                    trailEffect = Fx.instTrail;
+                    trailEffect = Fx.flakExplosion;
                     despawnEffect = Fx.instBomb;
                     trailSpacing = 20f;
                     damage = 60;
-                    buildingDamageMultiplier = 0.2f;
-                    speed = 60;
+		    lifetime = 10f;
+                    speed = 20;
                     hitShake = 6f;
                 }};
 
-                bulletInterval = 3f;
-                intervalRandomSpread = 20f;
-                intervalBullets = 2;
-                intervalAngle = 180f;
-                intervalSpread = 300f;
+//                 bulletInterval = 3f;
+//                 intervalRandomSpread = 20f;
+//                 intervalBullets = 2;
+//                 intervalAngle = 180f;
+//                 intervalSpread = 300f;
 
-                fragBullets = 20;
+                fragBullets = 4;
                 fragVelocityMin = 0.5f;
                 fragVelocityMax = 1.5f;
                 fragLifeMin = 0.5f;
