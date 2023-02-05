@@ -1,4 +1,4 @@
-package sw.content;
+package me.content;
 
 import arc.graphics.Color;
 import mindustry.content.*;
