@@ -106,10 +106,10 @@ public class MEBlocks {
 //                 shootSound = Sounds.cannon;
 
                 fragBullet = new PointBulletType(){{
-                    shootEffect = Fx.magmasmoke;
+                    shootEffect = Fx.missileTrail;
                     hitEffect = Fx.hitLancer;
-                    smokeEffect = Fx.smokeCloud;
-                    trailEffect = Fx.magmasmoke;
+                    smokeEffect = Fx.missileTrail;
+                    trailEffect = Fx.missileTrail;
                     despawnEffect = Fx.instBomb;
                     trailSpacing = 20f;
                     damage = 60;
@@ -137,6 +137,7 @@ public class MEBlocks {
             requirements(Category.turret, with(Items.copper, 75, Items.lead, 25, Items.coal, 50, Items.sand, 50));
             shootType = new LightningBulletType(){{
                 damage = 20;
+				lightning = 10;
                 lightningLength = 25;
                 collidesAir = false;
                 ammoMultiplier = 10f;
@@ -145,7 +146,7 @@ public class MEBlocks {
 
                 lightningType = new BulletType(0.0001f, 0f){{
                     lifetime = Fx.lightning.lifetime;
-		    lightning = 10;
+// 		    lightning = 10;
                     hitEffect = Fx.hitLancer;
                     despawnEffect = Fx.none;
                     status = StatusEffects.shocked;
