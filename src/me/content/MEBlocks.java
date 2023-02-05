@@ -106,10 +106,10 @@ public class MEBlocks {
 //                 shootSound = Sounds.cannon;
 
                 fragBullet = new PointBulletType(){{
-                    shootEffect = Fx.missileTrailShort;
+                    shootEffect = Fx.incendTrail;
                     hitEffect = Fx.hitLancer;
-                    smokeEffect = Fx.missileTrailShort;
-                    trailEffect = Fx.missileTrailShort;
+                    smokeEffect = Fx.incendTrail;
+                    trailEffect = Fx.incendTrail;
                     despawnEffect = Fx.instBomb;
                     trailSpacing = 20f;
                     damage = 60;
