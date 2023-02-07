@@ -77,6 +77,7 @@ public class MEBlocks {
 			health = 200;
 			reload = 30f;
 			range = 200f;
+	    rotateSpeed = 4f;
 			consumePower(4f);
 			shootSound = Sounds.blaster;
       
