@@ -106,9 +106,9 @@ public class MEBlocks {
 //                 shootSound = Sounds.cannon;
 
                 fragBullet = new PointBulletType(){{
-                    shootEffect = Fx.hitLancer;
+//                     shootEffect = Fx.hitLancer;
                     hitEffect = Fx.instHit;
-                    smokeEffect = Fx.hitLancer;
+//                     smokeEffect = Fx.hitLancer;
 //                     trailEffect = Fx.incendTrail;
                     despawnEffect = Fx.instBomb;
                     trailSpacing = 20f;
@@ -163,7 +163,7 @@ public class MEBlocks {
             rotateSpeed = 6f;
             targetAir = false;
             range = 150f;
-            shootEffect = Fx.lightningShoot;
+//             shootEffect = Fx.lightningShoot;
             heatColor = Color.black;
             recoil = 1.7f;
             size = 2;
