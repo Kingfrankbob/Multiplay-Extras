@@ -68,7 +68,7 @@ public class MEBlocks {
 // 			maxHeat = 500f;
 // 		}};
 
-    lightningEnhancer = new PowerTurret("enhancerL") {{
+    lightningEnhancer = new PowerTurret("lightenhance") {{
 			requirements(Category.turret, with(
 							Items.lead, 120,
 							Items.copper, 70
