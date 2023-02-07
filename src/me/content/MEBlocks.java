@@ -116,7 +116,7 @@ public class MEBlocks {
                     despawnEffect = Fx.instHit;
                     damage = 60;
 		    lifetime = 10f;
-                    speed = 20;
+                    speed = 10;
                 }};
 
 //                 bulletInterval = 3f;
@@ -127,7 +127,7 @@ public class MEBlocks {
 
                 fragBullets = 4;
                 fragVelocityMin = 0.5f;
-                fragVelocityMax = 1.5f;
+                fragVelocityMax = 1.0f;
                 fragLifeMin = 0.5f;
             }};
 
