@@ -133,7 +133,7 @@ public class MEBlocks {
 		}};
 		
 		
-	    arcaicReleaser = new PowerTurret("arcRel"){{
+	    arcaicReleaser = new PowerTurret("araicRelease"){{
             requirements(Category.turret, with(Items.copper, 75, Items.lead, 25, Items.coal, 50, Items.sand, 50));
             shootType = new LightningBulletType(){{
                 damage = 20;
