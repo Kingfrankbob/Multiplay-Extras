@@ -1,8 +1,12 @@
 package me.content;
 
+import arc.*;
 import arc.graphics.*;
+import arc.graphics.g2d.*;
 import arc.math.*;
+import arc.math.geom.*;
 import arc.struct.*;
+import arc.util.*;
 import mindustry.*;
 import mindustry.ctype.*;
 import mindustry.content.*;
@@ -41,6 +45,11 @@ import mindustry.world.meta.*;
 
 import static mindustry.type.ItemStack.*;
 import static mindustry.type.ItemStack.with;
+import static arc.graphics.g2d.Draw.rect;
+import static arc.graphics.g2d.Draw.*;
+import static arc.graphics.g2d.Lines.*;
+import static arc.math.Angles.*;
+import static mindustry.Vars.*;
 import mindustry.type.Item;
 import mindustry.type.Liquid;
 import mindustry.type.LiquidStack;
