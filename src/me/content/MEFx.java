@@ -58,7 +58,7 @@ public class MEFx
 {
   public static final Effect 
     
-  enhanceTrail = new Effect(50, e -> { color(Color.gray); Fill.circle(e.x, e.y, (e.fout() * 6f)); }),
+  enhanceTrail = new Effect(50, e -> { color(Color.gray); Fill.circle(e.x, e.y, (e.fout() * 4f)); }),
   
   enhanceHit = new Effect(80, e -> { color(Pal.lightOrange); stroke(e.fout() * 2f); Lines.circle(e.x, e.y, 4f + e.fout() * 20f); Fill.circle(e.x, e.y, (e.fout() * 4f)); });
   
