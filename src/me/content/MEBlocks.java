@@ -97,7 +97,7 @@ public class MEBlocks {
         
                 smokeEffect = Fx.shootSmokeTitan;
                 hitColor = Color.valueOf("b33d0b");
-                sprite = "enhanceBullet";
+                sprite = "me-enhanceBullet";
                 trailEffect = Fx.missileTrail;
                 fragOnHit = true;
                 speed = 5f;
