@@ -123,7 +123,7 @@ public class MEBlocks {
                     damage = 60;
 		    lifetime = 10f;
                     speed = 10;
-			trailLength = 6f;
+			trailInterval = 6f;
                 }};
 
 //                 bulletInterval = 3f;
