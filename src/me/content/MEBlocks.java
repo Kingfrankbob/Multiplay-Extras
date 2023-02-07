@@ -89,6 +89,7 @@ public class MEBlocks {
 	    rotateSpeed = 4f;
 			consumePower(4f);
 			shootSound = Sounds.blaster;
+	    localizedName = "Lightning Enhancer";
       
       
       shootType = new BasicBulletType(){{
@@ -149,7 +150,7 @@ public class MEBlocks {
                 collidesAir = false;
                 ammoMultiplier = 10f;
 		shoot.shots = 16;
-// 		name = "Arcaic Release";
+		localizedName = "Arcaic Release";
                 //for visual stats only.
 
                 lightningType = new BulletType(0.0001f, 0f){{
