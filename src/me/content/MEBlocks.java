@@ -98,7 +98,7 @@ public class MEBlocks {
                 hitColor = Pal.surge;
                 sprite = "large-orb";
                 trailEffect = Fx.missileTrail;
-                trailInterval = 3f;
+//                 trailInterval = 3f;
                 trailParam = 4f;
 //                 pierceCap = 2;
                 fragOnHit = true;
