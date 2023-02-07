@@ -141,6 +141,7 @@ public class MEBlocks {
                 lightningLength = 25;
                 collidesAir = false;
                 ammoMultiplier = 10f;
+		shoot.shots = 16;
 // 		name = "Arcaic Release";
                 //for visual stats only.
 
