@@ -42,6 +42,7 @@ import mindustry.world.blocks.units.*;
 import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
+import me.content.MEFx;
 
 import static mindustry.type.ItemStack.*;
 import static mindustry.type.ItemStack.with;
@@ -117,10 +118,10 @@ public class MEBlocks {
 
                 fragBullet = new PointBulletType(){{
                     shootEffect = Fx.none;
-                    hitEffect = Fx.pointShockwave;
+                    hitEffect = MEFx.enahnceHit;
                     smokeEffect = Fx.none;
-                    trailEffect = new Effect(110, e -> { color(Color.gray); Fill.circle(e.x, e.y, (e.fout() * 6f)); });
-                    despawnEffect = Fx.instHit;
+                    trailEffect = MEFx.enhanceTrail;
+                    despawnEffect = MEFx.enhanceHit;
                     damage = 60;
 		    lifetime = 10f;
                     speed = 10;
