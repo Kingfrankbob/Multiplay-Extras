@@ -119,7 +119,7 @@ public class MEBlocks {
                     shootEffect = Fx.none;
                     hitEffect = Fx.pointShockwave;
                     smokeEffect = Fx.none;
-                    trailEffect = new Effect(110, e -> { color(Color.gray); Fill.circle(e.x, e.y, 6f); });
+                    trailEffect = new Effect(110, e -> { color(Color.gray); for(int i = 0; i < 6; i++) Fill.circle(e.x, e.y, 6f); });
                     despawnEffect = Fx.instHit;
                     damage = 60;
 		    lifetime = 10f;
