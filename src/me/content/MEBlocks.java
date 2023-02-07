@@ -68,7 +68,7 @@ public class MEBlocks {
 // 			maxHeat = 500f;
 // 		}};
 
-    lightningEnhancer = new PowerTurret("lightenhance") {{
+    lightningEnhancer = new PowerTurret("arcaicRelease") {{
 			requirements(Category.turret, with(
 							Items.lead, 120,
 							Items.copper, 70
@@ -107,10 +107,10 @@ public class MEBlocks {
 
                 fragBullet = new PointBulletType(){{
                     shootEffect = Fx.none;
-                    hitEffect = Fx.pointShockwave;
+                    hitEffect = Fx.none;
                     smokeEffect = Fx.none;
                     trailEffect = Fx.none;
-                    despawnEffect = Fx.instHit;
+                    despawnEffect = Fx.none;
                     damage = 60;
 		    lifetime = 10f;
                     speed = 20;
