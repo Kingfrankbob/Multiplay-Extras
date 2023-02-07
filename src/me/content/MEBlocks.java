@@ -107,10 +107,10 @@ public class MEBlocks {
 
                 fragBullet = new PointBulletType(){{
                     shootEffect = Fx.none;
-                    hitEffect = Fx.none;
+                    hitEffect = Fx.pointShockwave;
                     smokeEffect = Fx.none;
                     trailEffect = Fx.none;
-                    despawnEffect = Fx.none;
+                    despawnEffect = Fx.instHit;
                     damage = 60;
 		    lifetime = 10f;
                     speed = 20;
@@ -135,7 +135,6 @@ public class MEBlocks {
             requirements(Category.turret, with(Items.copper, 75, Items.lead, 25, Items.coal, 50, Items.sand, 50));
             shootType = new LightningBulletType(){{
                 damage = 20;
-				lightning = 10;
                 lightningLength = 25;
                 collidesAir = false;
                 ammoMultiplier = 10f;
