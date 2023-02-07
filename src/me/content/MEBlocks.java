@@ -106,10 +106,10 @@ public class MEBlocks {
 //                 shootSound = Sounds.cannon;
 
                 fragBullet = new PointBulletType(){{
-//                     shootEffect = Fx.hitLancer;
+                    shootEffect = Fx.none;
                     hitEffect = Fx.instHit;
-//                     smokeEffect = Fx.hitLancer;
-//                     trailEffect = Fx.incendTrail;
+                    smokeEffect = Fx.none;
+                    trailEffect = Fx.none;
                     despawnEffect = Fx.instBomb;
                     damage = 60;
 		    lifetime = 10f;
