@@ -85,7 +85,6 @@ public class MEBlocks {
         
                 smokeEffect = Fx.shootSmokeTitan;
                 hitColor = Pal.surge;
-
                 sprite = "large-orb";
                 trailEffect = Fx.missileTrail;
                 trailInterval = 3f;
@@ -106,10 +105,10 @@ public class MEBlocks {
 //                 shootSound = Sounds.cannon;
 
                 fragBullet = new PointBulletType(){{
-                    shootEffect = Fx.incendTrail;
-                    hitEffect = Fx.hitLancer;
-                    smokeEffect = Fx.incendTrail;
-                    trailEffect = Fx.incendTrail;
+                    shootEffect = Fx.hitLancer;
+                    hitEffect = Fx.instHit;
+                    smokeEffect = Fx.hitLancer;
+//                     trailEffect = Fx.incendTrail;
                     despawnEffect = Fx.instBomb;
                     trailSpacing = 20f;
                     damage = 60;
