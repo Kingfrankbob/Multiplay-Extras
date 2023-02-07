@@ -111,11 +111,9 @@ public class MEBlocks {
 //                     smokeEffect = Fx.hitLancer;
 //                     trailEffect = Fx.incendTrail;
                     despawnEffect = Fx.instBomb;
-                    trailSpacing = 20f;
                     damage = 60;
 		    lifetime = 10f;
                     speed = 20;
-                    hitShake = 6f;
                 }};
 
 //                 bulletInterval = 3f;
