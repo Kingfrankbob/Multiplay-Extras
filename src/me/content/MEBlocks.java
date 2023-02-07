@@ -96,12 +96,9 @@ public class MEBlocks {
       shootType = new BasicBulletType(){{
         
                 smokeEffect = Fx.shootSmokeTitan;
-                hitColor = Pal.surge;
+                hitColor = Color.valueOf("b33d0b");
                 sprite = "large-orb";
                 trailEffect = Fx.missileTrail;
-//                 trailInterval = 3f;
-                trailParam = 4f;
-//                 pierceCap = 2;
                 fragOnHit = true;
                 speed = 5f;
                 damage = 180f;
@@ -110,11 +107,8 @@ public class MEBlocks {
                 backColor = Pal.surge;
                 frontColor = Color.white;
                 shrinkX = shrinkY = 0f;
-//                 trailColor = Pal.surge;
                 trailLength = 12;
                 trailWidth = 2.2f;
-//                 despawnSound = Sounds.dullExplosion;
-//                 shootSound = Sounds.cannon;
 
                 fragBullet = new PointBulletType(){{
                     shootEffect = Fx.none;
@@ -128,19 +122,13 @@ public class MEBlocks {
 			trailInterval = 6f;
                 }};
 
-//                 bulletInterval = 3f;
-//                 intervalRandomSpread = 20f;
-//                 intervalBullets = 2;
-//                 intervalAngle = 180f;
-//                 intervalSpread = 300f;
-
                 fragBullets = 4;
                 fragVelocityMin = 0.5f;
                 fragVelocityMax = 1.0f;
                 fragLifeMin = 0.5f;
             }};
 
-		}};
+	}};
 		
 		
 	    arcaicReleaser = new PowerTurret("arcaicRelease"){{
@@ -150,13 +138,11 @@ public class MEBlocks {
                 lightningLength = 25;
                 collidesAir = false;
                 ammoMultiplier = 10f;
-		shoot.shots = 16;
+		shoot.shots = 16; // YES IT FIANLLY WORKS
 		localizedName = "Arcaic Release";
-                //for visual stats only.
 
                 lightningType = new BulletType(0.0001f, 0f){{
                     lifetime = Fx.lightning.lifetime;
-// 		    lightning = 10;
                     hitEffect = Fx.hitLancer;
                     despawnEffect = Fx.none;
                     status = StatusEffects.shocked;
