@@ -1,4 +1,4 @@
-package ME.content;
+package me.content;
 
 import arc.*;
 import arc.graphics.*;
