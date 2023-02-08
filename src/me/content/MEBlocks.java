@@ -43,6 +43,7 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import me.content.MEFx;
+import me.content.MEItems;
 
 import static mindustry.type.ItemStack.*;
 import static mindustry.type.ItemStack.with;
