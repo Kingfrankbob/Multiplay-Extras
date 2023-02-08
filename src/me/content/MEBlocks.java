@@ -59,7 +59,7 @@ import mindustry.type.LiquidStack;
 public class MEBlocks {
 	public static Block
 
-		lightningEnhancer, arcaicReleaser, instaCrafter, ateliteCrasher;
+		lightningEnhancer, arcaicReleaser, instaCrafter, sateliteCrasher;
 
 	public static void load() {
 
