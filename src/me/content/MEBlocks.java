@@ -174,9 +174,9 @@ public class MEBlocks {
             requirements(Category.crafting, with(Items.copper, 150, Items.silicon, 200, Items.titanium, 105, Items.thorium, 50));
             size = 3;
             health = 300;
-            craftEffect = Fx.pulverizeMedium;
+            craftEffect = MEFx.instaCraftEffect;
             outputItem = new ItemStack(MEItems.istantium, 2);
-            craftTime = 1f;
+            craftTime = 15f;
             consumeItems(with(Items.titanium, 1, Items.thorium, 2));
             consumePower(1f);
             localizedName = "Istantium Crafter";
