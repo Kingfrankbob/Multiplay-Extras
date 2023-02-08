@@ -58,7 +58,7 @@ import mindustry.type.LiquidStack;
 public class MEBlocks {
 	public static Block
 
-		lightningEnhancer, arcaicReleaser;
+		lightningEnhancer, arcaicReleaser, instaCrafter;
 
 	public static void load() {
 
@@ -166,6 +166,19 @@ public class MEBlocks {
             shootSound = Sounds.spark;
             consumePower(3.3f);
             coolant = consumeCoolant(0.1f);
+        }};
+
+        instaCrafter = new GenericCrafter("instaCraft"){{
+
+            requirements(Category.crafting, with(Items.copper, 150, Items.silicon, 200, Items.titanium, 105, Items.thorium, 50));
+            size = 3;
+            health = 300;
+            craftEffect = Fx.pulverizeMedium;
+            outputItem = new ItemStack(MEItems.istantium, 2);
+            craftTime = 1f;
+            consumes.items(with(Items.titanium, 1, Items.thorium, 2));
+            consumes.power(1f);
+            localizedName = "Istantium Crafter";
         }};
 
 	}
