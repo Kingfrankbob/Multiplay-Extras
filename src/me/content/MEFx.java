@@ -62,7 +62,11 @@ public class MEFx
   
   enhanceHit = new Effect(80, e -> { color(Pal.lightOrange); stroke(e.fout() * 2f); Lines.circle(e.x, e.y, (e.fout() + (e.fout() * 0.5f)) * 20f); Fill.circle(e.x, e.y, (e.fout() * 4f)); }),
 
-  instaCraftEffect = new Effect(50, e -> { color(Color.valueOf("44FCFF")); stroke(e.fout() * 2f); Lines.circle(e.x, e.y, e.fout() * 20f); Lines.circle(e.x, e.y, 20f - (e.fout() * 20f)); });
-  
+  instaCraftEffect = new Effect(50, e -> { 
+    color(Color.valueOf("44FCFF"));
+    stroke(e.fout() * 2f); 
+    if(e.fout() < (7/15)) Lines.circle(e.x, e.y, e.fout() * 20f);
+    else Lines.circle(e.x, e.y, 20f - (e.fout() * 20f)); 
+  });
 }
 
