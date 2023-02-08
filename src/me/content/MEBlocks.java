@@ -59,7 +59,7 @@ import mindustry.type.LiquidStack;
 public class MEBlocks {
 	public static Block
 
-		lightningEnhancer, arcaicReleaser, instaCrafter;
+		lightningEnhancer, arcaicReleaser, instaCrafter, ateliteCrasher;
 
 	public static void load() {
 
@@ -181,6 +181,46 @@ public class MEBlocks {
             consumePower(1f);
             localizedName = "Istantium Crafter";
         }};
+		
+		  sateliteCrasher = new PowerTurret("satCrash") {{
+			requirements(Category.turret, with(
+							Items.lead, 120,
+							Items.copper, 70
+			));
+			size = 2;
+			health = 200;
+			reload = 30f;
+			range = 200f;
+	    rotateSpeed = 4f;
+			consumePower(4f);
+			shootSound = Sounds.blaster;
+	    localizedName = "Lightning Enhancer";
+      
+      
+      shootType = new BasicBulletType(){{
+        
+                smokeEffect = Fx.shootSmokeTitan;
+                hitColor = Color.valueOf("b33d0b");
+                sprite = "me-enhanceBullet";
+                trailEffect = new Effect(50, e -> {  color(e.color);
+        stroke(e.fout() * 2f);
+        Lines.circle(shootX, shootY, e.finpow() * e.rotation);
+        randLenVectors(e.id + 1, 8, 1f + 23f * e.finpow(), (x, y) ->
+            lineAngle(shootX + x, shootY + y, Mathf.angle(x, y), 1f + e.fout() * 3f));
+    });
+                speed = 5f;
+                damage = 180f;
+                lifetime = 20f;
+                width = height = 16f;
+                backColor = Pal.surge;
+                frontColor = Color.white;
+                shrinkX = shrinkY = 0f;
+                trailLength = 12;
+                trailWidth = 2.2f;
+
+            }};
+
+	}};
 
 	}
 }
