@@ -18,7 +18,7 @@ public class MEVars {
      *  ModTechTree.load()
      * */
     public static void loadContent() {
-//         MEItems.load();
+        MEItems.load();
 //         MELiquids.load();
 //         MEEntityMapping.load();
 //         MEUnitTypes.load();
