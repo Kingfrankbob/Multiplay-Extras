@@ -202,11 +202,9 @@ public class MEBlocks {
                 smokeEffect = Fx.shootSmokeTitan;
                 hitColor = Color.valueOf("b33d0b");
                 sprite = "me-enhanceBullet";
-                trailEffect = new Effect(50, e -> {  color(e.color);
+                trailEffect = new Effect(50, e -> {  color(Color.valueof("f6d3a2"));
         stroke(e.fout() * 2f);
         Lines.circle(shootX, shootY, e.finpow() * e.rotation);
-        randLenVectors(e.id + 1, 8, 1f + 23f * e.finpow(), (x, y) ->
-            lineAngle(shootX + x, shootY + y, Mathf.angle(x, y), 1f + e.fout() * 3f));
     });
                 speed = 5f;
                 damage = 180f;
