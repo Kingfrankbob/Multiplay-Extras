@@ -174,7 +174,7 @@ public class MEBlocks {
             size = 3;
             health = 300;
             craftEffect = Fx.pulverizeMedium;
-            outputItem = new ItemStack(MEItems.istantium, 2);
+            outputItem = with(MEItems.istantium, 2);
             craftTime = 1f;
             consumeItems(with(Items.titanium, 1, Items.thorium, 2));
             consumePower(1f);
