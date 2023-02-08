@@ -59,7 +59,7 @@ public class MEItems{
   
   public void load(){
 
-  istantium = new Item("me-istantium", Color.valueOf("00EAFF")){{
+  istantium = new Item("istantium", Color.valueOf("00EAFF")){{
     localizedName = "Instantium";
     description = "A Super Conductive, Relatively Radioactive, Hard Metal. Can be used to build electricity based structures.";
     hardness = 2;
