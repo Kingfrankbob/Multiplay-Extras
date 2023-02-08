@@ -176,7 +176,7 @@ public class MEBlocks {
             health = 300;
             craftEffect = MEFx.instaCraftEffect;
             outputItem = new ItemStack(MEItems.istantium, 2);
-            craftTime = 15f;
+            craftTime = 50f;
             consumeItems(with(Items.titanium, 1, Items.thorium, 2));
             consumePower(1f);
             localizedName = "Istantium Crafter";
