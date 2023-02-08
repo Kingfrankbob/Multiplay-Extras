@@ -57,7 +57,7 @@ import mindustry.type.LiquidStack;
 public class MEItems{
   public static Item istantium;
   
-  public void load(){
+  public static void load(){
 
   istantium = new Item("istantium", Color.valueOf("00EAFF")){{
     localizedName = "Instantium";
