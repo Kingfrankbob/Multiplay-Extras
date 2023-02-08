@@ -54,7 +54,7 @@ import mindustry.type.Item;
 import mindustry.type.Liquid;
 import mindustry.type.LiquidStack;
 
-public class MEItems implements ContentList {
+public class MEItems{
   public static Item istantium;
   
   public void load(){
