@@ -65,7 +65,7 @@ public class MEFx
   instaCraftEffect = new Effect(50, e -> { 
     color(Color.valueOf("44FCFF"));
     stroke(e.fout() * 2f); 
-    Lines.circle(e.x, e.y, e.slope() * 20f);
+    Lines.circle(e.x, e.y, e.fslope() * 20f);
   });
 }
 
