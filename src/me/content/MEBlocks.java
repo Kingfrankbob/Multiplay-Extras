@@ -176,8 +176,8 @@ public class MEBlocks {
             craftEffect = Fx.pulverizeMedium;
             outputItem = new ItemStack(MEItems.istantium, 2);
             craftTime = 1f;
-            consumes.items(with(Items.titanium, 1, Items.thorium, 2));
-            consumes.power(1f);
+            consumeItems(with(Items.titanium, 1, Items.thorium, 2));
+            consumePower(1f);
             localizedName = "Istantium Crafter";
         }};
 
