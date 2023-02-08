@@ -20,7 +20,7 @@ public class MEItems implements ContentList {
 
   istantium = new Item("me-istantium", Color.valueOf("00EAFF")){{
     localizedName = "Instantium";
-    description = "A Super Conductive, Relatively Radioactive, Hard Metal. Can be used to build electricity based structures. "
+    description = "A Super Conductive, Relatively Radioactive, Hard Metal. Can be used to build electricity based structures.";
     hardness = 2;
     radioactivity = -1f;
     charge = 3.5f;
