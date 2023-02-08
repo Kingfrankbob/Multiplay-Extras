@@ -66,7 +66,7 @@ public class MEFx
     color(Color.valueOf("44FCFF"));
     stroke(e.fout() * 2f); 
     if(e.fout() < (7/15)) Lines.circle(e.x, e.y, e.fout() * 20f);
-    if(e.fout > (7/15)) Lines.circle(e.x, e.y, 20f - (e.fout() * 20f)); 
+    if(e.fout() > (8/15)) Lines.circle(e.x, e.y, 20f - (e.fout() * 20f)); 
   });
 }
 
