@@ -69,7 +69,7 @@ public class MEFx
   }),
   
   lightningHitEffectOne = new Effect(50, e -> {
-    Draw.rect("tryAgain", e.x, e.y, 10f, 10f);
+    Draw.rect("newTurretEffect", e.x, e.y, 10f, 10f);
     
   });
                                      
