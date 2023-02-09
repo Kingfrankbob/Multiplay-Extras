@@ -87,7 +87,7 @@ public class MEBlocks {
 			size = 2;
 			health = 200;
 			reload = 30f;
-			range = 200f;
+			range = 400f;
 	    rotateSpeed = 4f;
 			consumePower(4f);
 			shootSound = Sounds.blaster;
@@ -116,7 +116,7 @@ public class MEBlocks {
                     hitEffect = MEFx.enhanceHit;
                     smokeEffect = Fx.none;
                     trailEffect = MEFx.enhanceTrail;
-                    despawnEffect = MEFx.enhanceHit;
+                    despawnEffect = MEFx.lightningEffectHitOne;
                     damage = 60;
 		    lifetime = 10f;
                     speed = 10;
