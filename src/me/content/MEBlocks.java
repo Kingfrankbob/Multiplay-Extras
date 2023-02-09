@@ -207,6 +207,7 @@ public class MEBlocks {
         Lines.circle(shootX, shootY, e.finpow() * e.rotation);
     });
 	      hitEffect = MEFx.lightningHitEffectOne;
+	      despawnEffect = MEFx.lightningHitEffectOne;
                 speed = 5f;
                 damage = 180f;
                 lifetime = 20f;
