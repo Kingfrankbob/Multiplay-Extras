@@ -66,6 +66,12 @@ public class MEFx
     color(Color.valueOf("44FCFF"));
     stroke(e.fout() * 2f); 
     Lines.circle(e.x, e.y, e.fslope() * 20f);
+  }),
+  
+  lightningHitEffectOne = new Effect(50, e -> {
+    Draw.rect("tryAgain", e.x, e.y, 10f, 10f);
+    
   });
+                                     
 }
 
