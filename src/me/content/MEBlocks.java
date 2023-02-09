@@ -116,7 +116,7 @@ public class MEBlocks {
                     hitEffect = MEFx.enhanceHit;
                     smokeEffect = Fx.none;
                     trailEffect = MEFx.enhanceTrail;
-                    despawnEffect = MEFx.lightningEffectHitOne;
+                    despawnEffect = MEFx.enhanceHit;
                     damage = 60;
 		    lifetime = 10f;
                     speed = 10;
@@ -206,6 +206,7 @@ public class MEBlocks {
         stroke(e.fout() * 2f);
         Lines.circle(shootX, shootY, e.finpow() * e.rotation);
     });
+	      hitEffect = MEFx.lightningHitEffectOne;
                 speed = 5f;
                 damage = 180f;
                 lifetime = 20f;
