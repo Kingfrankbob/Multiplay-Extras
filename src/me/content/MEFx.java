@@ -7,6 +7,7 @@ import arc.math.*;
 import arc.math.geom.*;
 import arc.struct.*;
 import arc.util.*;
+import Draw.java;
 import mindustry.*;
 import mindustry.ctype.*;
 import mindustry.content.*;
