@@ -69,8 +69,8 @@ public class MEFx
     Lines.circle(e.x, e.y, e.fslope() * 20f);
   }),
   
-  lightningHitEffectOne = new Effect(100, e -> {
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 800f), (e.fout() * 800f));
+  lightningHitEffectOne = new Effect(200, e -> {
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(20f) * 800f), (e.fout(20f) * 800f), e.fout() * 90);
   });
                                      
 }
