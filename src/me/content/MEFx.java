@@ -70,7 +70,7 @@ public class MEFx
   }),
   
   lightningHitEffectOne = new Effect(100, e -> {
-    Draw.rect("me-satelliteCrash", e.x, e.y, 800f + (e.fout() * 800f), 800f + (e.fout() * 800f), e.rotation + (e.fout() * 5));
+    Draw.rect("me-satelliteCrash", e.x, e.y, 800f + (e.fout() * 1000f), 800f + (e.fout() * 1000f));
   });
                                      
 }
