@@ -57,6 +57,8 @@ import mindustry.type.LiquidStack;
 
 public class MEFx
 {
+  public static final Rand rand = new Rand();
+
   public static final Effect 
     
   enhanceTrail = new Effect(50, e -> { color(Color.gray); Fill.circle(e.x, e.y, (e.fout() * 4f)); }),
