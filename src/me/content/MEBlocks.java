@@ -182,10 +182,6 @@ public class MEBlocks {
             localizedName = "Istantium Crafter";
         }};
 		
-		
-		
-		
-		
 		  sateliteCrasher = new PowerTurret("satCrash") {{
 			requirements(Category.turret, with(
 							Items.lead, 120,
@@ -230,7 +226,7 @@ public class MEBlocks {
                     trailEffect = Fx.none;
                     despawnEffect = MEFx.nextExplosion;
                     damage = 60;
-		    lifetime = 2000f;
+		    lifetime = 200f;
                     speed = 0;
 			trailInterval = 6f;
                 }};
@@ -238,7 +234,7 @@ public class MEBlocks {
                 fragBullets = 1;
                 fragVelocityMin = 0.0f;
                 fragVelocityMax = 0.0f;
-                fragLifeMin = 0.5f;
+                fragLifeMin = 200f;
 
             }};
 
