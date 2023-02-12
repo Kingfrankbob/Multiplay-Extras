@@ -230,7 +230,7 @@ public class MEBlocks {
                     trailEffect = Fx.none;
                     despawnEffect = MEFx.nextExplosion;
                     damage = 60;
-		    lifetime = 200f;
+		    lifetime = 2000f;
                     speed = 0;
 			trailInterval = 6f;
                 }};
