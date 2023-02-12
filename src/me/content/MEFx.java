@@ -72,7 +72,7 @@ public class MEFx
   }),
   
   lightningHitEffectOne = new Effect(200f, 100f, e -> {
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(20f) * 1000f), (e.fout(20f) * 1000f), e.fin() + 90);
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(20f) * 1000f), (e.fout(20f) * 1000f), (e.fin() * 90) + 90);
     color(Color.valueOf("ffffff"));
     
     for(int i = 0; i < 16; i++){
