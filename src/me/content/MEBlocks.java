@@ -210,7 +210,7 @@ public class MEBlocks {
 //         stroke(e.fout() * 2f);
 //         Lines.circle(shootX, shootY, e.finpow() * e.rotation);
 //     });
-	      trailEffec = Fx.none;
+	      trailEffect = Fx.none;
 	      hitEffect = MEFx.lightningHitEffectOne;
 	      despawnEffect = MEFx.lightningHitEffectOne;
                 speed = 5f;
