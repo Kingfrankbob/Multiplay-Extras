@@ -94,7 +94,8 @@ public class MEFx
             Lines.lineAngle(e.x, e.y, angle, e.foutpow() * 50f * rand.random(1f, 0.6f) + 2f, e.finpow() * 70f * lenRand + 6f);
 
         }
-    });
+    }),
+  finalEffect = new SeqEffect(lightningEffectOne, nextExplosion);
                                      
 }
 
