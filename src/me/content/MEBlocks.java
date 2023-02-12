@@ -182,6 +182,10 @@ public class MEBlocks {
             localizedName = "Istantium Crafter";
         }};
 		
+		
+		
+		
+		
 		  sateliteCrasher = new PowerTurret("satCrash") {{
 			requirements(Category.turret, with(
 							Items.lead, 120,
@@ -194,7 +198,7 @@ public class MEBlocks {
 	    rotateSpeed = 4f;
 			consumePower(4f);
 			shootSound = Sounds.blaster;
-	    localizedName = "Lightning Enhancer";
+	    localizedName = "Satellite Crasher";
       
       
       shootType = new BasicBulletType(){{
@@ -202,10 +206,11 @@ public class MEBlocks {
                 smokeEffect = Fx.shootSmokeTitan;
                 hitColor = Color.valueOf("b33d0b");
                 sprite = "me-enhanceBullet";
-                trailEffect = new Effect(50, e -> {  color(Color.valueOf("f6d3a2"));
-        stroke(e.fout() * 2f);
-        Lines.circle(shootX, shootY, e.finpow() * e.rotation);
-    });
+//                 trailEffect = new Effect(50, e -> {  color(Color.valueOf("f6d3a2"));
+//         stroke(e.fout() * 2f);
+//         Lines.circle(shootX, shootY, e.finpow() * e.rotation);
+//     });
+	      trailEffec = Fx.none;
 	      hitEffect = MEFx.lightningHitEffectOne;
 	      despawnEffect = MEFx.lightningHitEffectOne;
                 speed = 5f;
@@ -217,6 +222,23 @@ public class MEBlocks {
                 shrinkX = shrinkY = 0f;
                 trailLength = 12;
                 trailWidth = 2.2f;
+	      
+	      fragBullet = new PointBulletType(){{
+                    shootEffect = Fx.none;
+                    hitEffect = MEFx.enhanceHit;
+                    smokeEffect = Fx.none;
+                    trailEffect = Fx.none;
+                    despawnEffect = MEFx.enhanceHit;
+                    damage = 60;
+		    lifetime = 200f;
+                    speed = 0;
+			trailInterval = 6f;
+                }};
+
+                fragBullets = 1;
+                fragVelocityMin = 0.0f;
+                fragVelocityMax = 0.0f;
+                fragLifeMin = 0.5f;
 
             }};
 
