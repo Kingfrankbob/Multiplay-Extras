@@ -80,7 +80,20 @@ public class MEFx
             Lines.lineAngle(e.x, e.y, angle, e.finpow() * 70f * lenRand + 6f, e.foutpow()  * 50f * rand.random(1f, 0.6f) + 2f);
     }
     
-  });
+  }),
+   nextExplosion = new Effect(30f, 160f, e -> {
+        color(e.color);
+        stroke(e.fout() * 3f);
+        float circleRad = 6f + e.finpow() * 60f;
+        Lines.circle(e.x, e.y, circleRad);
+
+        rand.setSeed(e.id);
+        for(int i = 0; i < 16; i++){
+            float angle = rand.random(360f);
+            float lenRand = rand.random(0.5f, 1f);
+            Lines.lineAngle(e.x, e.y, angle, e.foutpow() * 50f * rand.random(1f, 0.6f) + 2f, e.finpow() * 70f * lenRand + 6f);
+        }
+    });
                                      
 }
 
