@@ -72,13 +72,13 @@ public class MEFx
   }),
   
   lightningHitEffectOne = new Effect(200f, e -> {
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(20f) * 4000f), (e.fout(20f) * 2000f), (e.fin() * 90) + 120);
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(20f) * 2000f), (e.fout(20f) * 4000f), (e.fin() * 90) + 120);
     color(Color.valueOf("ffffff"));
-    for(int i = 0; i < 16; i++){
-            float angle = rand.random(360f);
-            float lenRand = rand.random(0.5f, 1f);
-            Lines.lineAngle(e.x, e.y, angle, e.fin() * 70f * lenRand + 6f, e.fout() * 50f * rand.random(1f, 0.6f) + 2f);
-    }
+//     for(int i = 0; i < 16; i++){
+//             float angle = rand.random(360f);
+//             float lenRand = rand.random(0.5f, 1f);
+//             Lines.lineAngle(e.x, e.y, angle, e.fin() * 70f * lenRand + 6f, e.fout() * 50f * rand.random(1f, 0.6f) + 2f);
+//     }
     
   }),
    nextExplosion = new Effect(30f, 160f, e -> {
