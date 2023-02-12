@@ -71,13 +71,13 @@ public class MEFx
     Lines.circle(e.x, e.y, e.fslope() * 20f);
   }),
   
-  lightningHitEffectOne = new Effect(200f, 100f, e -> {
+  lightningHitEffectOne = new Effect(200f, e -> {
     Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(20f) * 40000f), (e.fout(20f) * 20000f), (e.fin() * 90) + 120);
     color(Color.valueOf("ffffff"));
     for(int i = 0; i < 16; i++){
             float angle = rand.random(360f);
             float lenRand = rand.random(0.5f, 1f);
-            Lines.lineAngle(e.x, e.y, angle, e.finpow() * 50f * rand.random(1f, 0.6f) + 2f, e.foutpow() * 70f * lenRand + 6f);
+            Lines.lineAngle(e.x, e.y, angle, e.finpow() * 70f * lenRand + 6f, e.foutpow()  * 50f * rand.random(1f, 0.6f) + 2f);
     }
     
   });
