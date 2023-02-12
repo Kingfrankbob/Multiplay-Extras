@@ -225,10 +225,10 @@ public class MEBlocks {
 	      
 	      fragBullet = new PointBulletType(){{
                     shootEffect = Fx.none;
-                    hitEffect = MEFx.enhanceHit;
+                    hitEffect = MEFx.nextExplosion;
                     smokeEffect = Fx.none;
                     trailEffect = Fx.none;
-                    despawnEffect = MEFx.enhanceHit;
+                    despawnEffect = MEFx.nextExplosion;
                     damage = 60;
 		    lifetime = 200f;
                     speed = 0;
