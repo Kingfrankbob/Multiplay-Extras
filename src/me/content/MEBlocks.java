@@ -207,8 +207,8 @@ public class MEBlocks {
 //         Lines.circle(shootX, shootY, e.finpow() * e.rotation);
 //     });
 	      trailEffect = Fx.none;
-	      hitEffect = MEFx.lightningHitEffectOne;
-	      despawnEffect = MEFx.lightningHitEffectOne;
+	      hitEffect = MEFx.finalEffect;
+	      despawnEffect = MEFx.finalEffect;
                 speed = 5f;
                 damage = 180f;
                 lifetime = 20f;
@@ -219,22 +219,6 @@ public class MEBlocks {
                 trailLength = 12;
                 trailWidth = 2.2f;
 	      
-	      fragBullet = new PointBulletType(){{
-                    shootEffect = Fx.none;
-                    hitEffect = MEFx.nextExplosion;
-                    smokeEffect = Fx.none;
-                    trailEffect = Fx.none;
-                    despawnEffect = MEFx.nextExplosion;
-                    damage = 60;
-		    lifetime = 200f;
-                    speed = 0;
-			trailInterval = 6f;
-                }};
-
-                fragBullets = 1;
-                fragVelocityMin = 0.0f;
-                fragVelocityMax = 0.0f;
-                fragLifeMin = 200f;
 
             }};
 
