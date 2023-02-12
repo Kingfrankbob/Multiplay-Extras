@@ -95,7 +95,7 @@ public class MEFx
 
         }
     }),
-  finalEffect = new SeqEffect(lightningEffectOne, nextExplosion);
+  finalEffect = new SeqEffect(lightningHitEffectOne, nextExplosion);
                                      
 }
 
