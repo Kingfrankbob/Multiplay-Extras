@@ -77,6 +77,7 @@ public class MEFx
             float angle = rand.random(360f);
             float lenRand = rand.random(0.5f, 1f);
             Lines.lineAngle(e.x, e.y, angle, e.foutpow() * 50f * rand.random(1f, 0.6f) + 2f, e.finpow() * 70f * lenRand + 6f);
+    }
   });
                                      
 }
