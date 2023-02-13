@@ -182,7 +182,10 @@ public class MEBlocks {
             localizedName = "Istantium Crafter";
       		  }};
 		
-		  sateliteCrasher = new PowerTurret("satCrash") {{
+		
+		
+		
+sateliteCrasher = new PowerTurret("satCrash") {{
 			requirements(Category.turret, with(
 							Items.lead, 120,
 							Items.copper, 70
@@ -190,7 +193,7 @@ public class MEBlocks {
 			size = 2;
 			health = 200;
 			reload = 30f;
-			range = 200f;
+			range = 500f;
 	        rotateSpeed = 4f;
 			consumePower(4f);
 			shootSound = Sounds.blaster;
@@ -207,7 +210,7 @@ public class MEBlocks {
 	        	despawnEffect = MEFx.finalEffect;
                 speed = 5f;
                 damage = 180f;
-                lifetime = 200f;
+                lifetime = 500f;
                 width = height = 16f;
                 backColor = Pal.surge;
                 frontColor = Color.white;
