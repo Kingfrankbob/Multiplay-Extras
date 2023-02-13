@@ -94,7 +94,7 @@ public class MEFx
             Lines.lineAngle(e.x, e.y, angle, e.foutpow() * 50f * rand.random(1f, 0.6f) + 2f, e.finpow() * 70f * lenRand + 6f);
 
         }
-                           float intensity = 8f;
+        float intensity = 8f;
         float baseLifetime = 25f + intensity * 15f;
         b.lifetime = 50f + intensity * 64f;
 
@@ -113,6 +113,7 @@ public class MEFx
                     Drawf.light(e.x + x, e.y + y, rad * 2.6f, Pal.lighterOrange, 0.7f);
                 });
             });
+        }
     }),
   finalEffect = new SeqEffect(lightningHitEffectOne, nextExplosion);
                                      
