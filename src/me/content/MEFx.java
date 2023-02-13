@@ -72,7 +72,7 @@ public class MEFx
   }),
   
   lightningHitEffectOne = new Effect(200f, e -> {
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 2000f) + 1f, (e.fout() * 4000f) + 1f, (e.fin() * 90) + 120);
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 2000f) + 0.01f, (e.fout() * 4000f) + 0.01f, (e.fin() * 90) + 120);
     color(Color.valueOf("ffffff"));
 //     for(int i = 0; i < 16; i++){
 //             float angle = rand.random(360f);
@@ -84,7 +84,7 @@ public class MEFx
    nextExplosion = new Effect(70f, 160f, e -> {
         color(Color.valueOf("ffffff"));
         stroke(e.fout() * 3f);
-        float circleRad = 6f + e.finpow() * 60f;
+        float circleRad = 6f + e.finpow() * 250f;
         Lines.circle(e.x, e.y, circleRad);
         rand.setSeed(e.id);
      
@@ -92,14 +92,12 @@ public class MEFx
             float angle = rand.random(360f);
             float lenRand = rand.random(0.5f, 1f);
             Lines.lineAngle(e.x, e.y, angle, e.foutpow() * 50f * rand.random(1f, 0.6f) + 2f, e.finpow() * 70f * lenRand + 6f);
-
         }
         float intensity = 8f;
         float baseLifetime = 25f + intensity * 15f;
-
+        color(Color.valueOf("787878"));
         alpha(0.8f);
         for(int i = 0; i < 5; i++){
-          
             rand.setSeed(e.id*2 + i);
             float lenScl = rand.random(0.25f, 1f);
             int fi = i;
