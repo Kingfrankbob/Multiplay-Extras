@@ -115,7 +115,7 @@ public class MEFx
   
   
   firstShadow = new Effect(100f, e -> {
-    color(Color.valueOf("000000"));
+    color(Color.valueOf("191919"));
     float intensity = 8f;
     Fill.circle(e.x, e.y, 100f);
     Drawf.light(e.x, e.y, 100f, e.color, intensity);
