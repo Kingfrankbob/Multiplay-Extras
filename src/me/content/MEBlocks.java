@@ -180,7 +180,7 @@ public class MEBlocks {
             consumeItems(with(Items.titanium, 1, Items.thorium, 2));
             consumePower(1f);
             localizedName = "Istantium Crafter";
-        }};
+      		  }};
 		
 		  sateliteCrasher = new PowerTurret("satCrash") {{
 			requirements(Category.turret, with(
@@ -191,33 +191,29 @@ public class MEBlocks {
 			health = 200;
 			reload = 30f;
 			range = 200f;
-	    rotateSpeed = 4f;
+	        rotateSpeed = 4f;
 			consumePower(4f);
 			shootSound = Sounds.blaster;
-	    localizedName = "Satellite Crasher";
-      
-      
-      shootType = new BasicBulletType(){{
-        
-                smokeEffect = Fx.shootSmokeTitan;
+			localizedName = "Satellite Crasher";
+			  
+      		shootType = new ArtilleryBulletType(){{
+				
+        		splashDamageRadius = 60f;
+                splashDamage = 150f;
+                smokeEffect = Fx.none;
                 hitColor = Color.valueOf("b33d0b");
-                sprite = "me-enhanceBullet";
-//                 trailEffect = new Effect(50, e -> {  color(Color.valueOf("f6d3a2"));
-//         stroke(e.fout() * 2f);
-//         Lines.circle(shootX, shootY, e.finpow() * e.rotation);
-//     });
-	      trailEffect = Fx.none;
-	      hitEffect = MEFx.finalEffect;
-	      despawnEffect = MEFx.finalEffect;
+	        	trailEffect = Fx.none;
+	        	hitEffect = MEFx.finalEffect;
+	        	despawnEffect = MEFx.finalEffect;
                 speed = 5f;
                 damage = 180f;
-                lifetime = 20f;
+                lifetime = 200f;
                 width = height = 16f;
                 backColor = Pal.surge;
                 frontColor = Color.white;
                 shrinkX = shrinkY = 0f;
-                trailLength = 12;
-                trailWidth = 2.2f;
+                trailLength = 0;
+                trailWidth = 0f;
 	      
 
             }};
