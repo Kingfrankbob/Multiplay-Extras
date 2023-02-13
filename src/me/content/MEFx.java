@@ -72,7 +72,7 @@ public class MEFx
   }),
   
   lightningHitEffectOne = new Effect(200f, e -> {
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 2000f) + 300f, (e.fout() * 4000f) + 300f, (e.fin() * 90) + 120);
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 2000f) + 100f, (e.fout() * 4000f) + 100f, (e.fin() * 90) + 120);
     color(Color.valueOf("ffffff"));
 //     for(int i = 0; i < 16; i++){
 //             float angle = rand.random(360f);
@@ -107,10 +107,9 @@ public class MEFx
             e.scaled(e.lifetime * lenScl, r -> {
                 randLenVectors(r.id + fi - 1, r.fin(Interp.pow10Out), (int)(2.8f * intensity), 25f * intensity, (x, y, in, out) -> {
                     float fout = r.fout(Interp.pow5Out) * rand.random(0.5f, 1f);
-                    float rad = fout * ((2f + intensity) * 2.35f);
+                    float rad = fout * ((2f + intensity) * 1.1f);
 
                     Fill.circle(r.x + x, r.y + y, rad);
-                    Drawf.light(r.x + x, r.y + y, rad * 2.6f, Pal.lighterOrange, 0.7f);
                 });
             });
         }
