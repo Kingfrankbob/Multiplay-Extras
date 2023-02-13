@@ -117,7 +117,12 @@ public class MEFx
             });
         }
     }),
-  finalEffect = new SeqEffect(lightningHitEffectOne, nextExplosion);
+  firstShadow = new Effect(100f, e -> {
+    float intensity = 8f;
+    Drawf.light(e.x + x, e.y + y, (201f * e.fout()) + 200f, Pal.lighterOrange, 0.7f);
+  }
+
+  finalEffect = new SeqEffect(firstShadown, lightningHitEffectOne, nextExplosion);
                                      
 }
 
