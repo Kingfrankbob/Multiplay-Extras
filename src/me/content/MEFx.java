@@ -72,7 +72,7 @@ public class MEFx
   }),
   
   lightningHitEffectOne = new Effect(200f, e -> {
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 2000f) + 500f, (e.fout() * 4000f) + 500f, (e.fin() * 90) + 120);
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 2000f) + 300f, (e.fout() * 4000f) + 300f, (e.fin() * 90) + 120);
     color(Color.valueOf("ffffff"));
 //     for(int i = 0; i < 16; i++){
 //             float angle = rand.random(360f);
