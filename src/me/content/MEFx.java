@@ -73,7 +73,7 @@ public class MEFx
   
   lightningHitEffectOne = new Effect(200f, e -> {
     float randomAng = rand.random(360);
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 100f, (e.fout() * 400f) + 20f, (e.fin() * 360) + 200);    
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 100f, (e.fout() * 400f) + 200f, (e.fin() * 360) + 20);    
   }),
   
    nextExplosion = new Effect(70f, 160f, e -> {
