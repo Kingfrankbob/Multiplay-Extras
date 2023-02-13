@@ -73,20 +73,14 @@ public class MEFx
   
   lightningHitEffectOne = new Effect(200f, e -> {
     float randomAng = rand.random(360);
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 1f, (e.fout() * 400f) + 1f, (e.fin() * 360) + 100);
-    color(Color.valueOf("ffffff"));
-//     for(int i = 0; i < 16; i++){
-//             float angle = rand.random(360f);
-//             float lenRand = rand.random(0.5f, 1f);
-//             Lines.lineAngle(e.x, e.y, angle, e.fin() * 70f * lenRand + 6f, e.fout() * 50f * rand.random(1f, 0.6f) + 2f);
-//     }
-    
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 1f, (e.fout() * 400f) + 1f, (e.fin() * 360) + 100);    
   }),
+  
    nextExplosion = new Effect(70f, 160f, e -> {
      
         color(Color.valueOf("ffffff"));
         stroke(e.fout() * 3f);
-                color(Color.valueOf("ffffff"));
+        color(Color.valueOf("ffffff"));
         float circleRad = 6f + e.finpow() * 250f;
         color(Color.valueOf("ffffff"));
         Lines.circle(e.x, e.y, circleRad);
@@ -117,9 +111,11 @@ public class MEFx
             });
         }
     }),
+  
+  
   firstShadow = new Effect(100f, e -> {
     float intensity = 8f;
-    Drawf.light(e.x, e.y, (201f * e.fout()) + 200f, Color.valueOf("080808"), 0.7f);
+    Drawf.light(e.x, e.y, (201f * e.fout()) + 200f, Color.valueOf("080808"), 100f);
   }),
 
   finalEffect = new SeqEffect(firstShadow, lightningHitEffectOne, nextExplosion);
