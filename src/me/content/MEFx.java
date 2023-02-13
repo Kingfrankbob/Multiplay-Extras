@@ -73,7 +73,7 @@ public class MEFx
   
   lightningHitEffectOne = new Effect(200f, e -> {
     float randomAng = rand.random(360);
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 10f, (e.fout() * 400f) + 20f, (e.fin() * 360) + 100);    
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 50f, (e.fout() * 400f) + 20f, (e.fin() * 360) + 150);    
   }),
   
    nextExplosion = new Effect(70f, 160f, e -> {
@@ -114,8 +114,9 @@ public class MEFx
   
   
   firstShadow = new Effect(100f, e -> {
+    color(Color.valueOf("080808"));
     float intensity = 8f;
-    Drawf.light(e.x, e.y, (201f * e.fout()) + 200f, Color.valueOf("ffffff"), 0.5f);
+    Drawf.light(e.x, e.y, 2.5f, e.color, 0.5f);
   }),
 
   finalEffect = new SeqEffect(firstShadow, lightningHitEffectOne, nextExplosion);
