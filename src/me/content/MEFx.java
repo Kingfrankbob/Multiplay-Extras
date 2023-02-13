@@ -96,21 +96,21 @@ public class MEFx
         }
         float intensity = 8f;
         float baseLifetime = 25f + intensity * 15f;
-        b.lifetime = 50f + intensity * 64f;
+        e.lifetime = 50f + intensity * 64f;
 
         alpha(0.8f);
         for(int i = 0; i < 5; i++){
           
-            rand.setSeed(b.id*2 + i);
+            rand.setSeed(e.id*2 + i);
             float lenScl = rand.random(0.25f, 1f);
             int fi = i;
-            b.scaled(b.lifetime * lenScl, e -> {
-                randLenVectors(e.id + fi - 1, e.fin(Interp.pow10Out), (int)(2.8f * intensity), 25f * intensity, (x, y, in, out) -> {
-                    float fout = e.fout(Interp.pow5Out) * rand.random(0.5f, 1f);
+            e.scaled(e.lifetime * lenScl, r -> {
+                randLenVectors(r.id + fi - 1, r.fin(Interp.pow10Out), (int)(2.8f * intensity), 25f * intensity, (x, y, in, out) -> {
+                    float fout = r.fout(Interp.pow5Out) * rand.random(0.5f, 1f);
                     float rad = fout * ((2f + intensity) * 2.35f);
 
-                    Fill.circle(e.x + x, e.y + y, rad);
-                    Drawf.light(e.x + x, e.y + y, rad * 2.6f, Pal.lighterOrange, 0.7f);
+                    Fill.circle(r.x + x, r.y + y, rad);
+                    Drawf.light(r.x + x, r.y + y, rad * 2.6f, Pal.lighterOrange, 0.7f);
                 });
             });
         }
