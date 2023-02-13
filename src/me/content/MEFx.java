@@ -73,7 +73,7 @@ public class MEFx
   
   lightningHitEffectOne = new Effect(200f, e -> {
     float randomAng = rand.random(360);
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 100f, (e.fout() * 400f) + 200f, (e.fin() * 360) + 20);    
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 50f, (e.fout() * 400f) + 100f, (e.fin() * 360) + 20);    
   }),
   
    nextExplosion = new Effect(70f, 160f, e -> {
@@ -95,7 +95,7 @@ public class MEFx
      
         float intensity = 8f;
         float baseLifetime = 25f + intensity * 15f;
-        color(Color.valueOf("787878"));
+        color(Color.valueOf("001108"));
         alpha(0.8f);
         for(int i = 0; i < 5; i++){
             rand.setSeed(e.id*2 + i);
