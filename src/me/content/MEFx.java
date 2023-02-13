@@ -82,7 +82,7 @@ public class MEFx
     
   }),
    nextExplosion = new Effect(30f, 160f, e -> {
-        color(e.color);
+        color(Color.valueOf("ffffff"));
         stroke(e.fout() * 3f);
         float circleRad = 6f + e.finpow() * 60f;
         Lines.circle(e.x, e.y, circleRad);
