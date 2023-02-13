@@ -82,12 +82,11 @@ public class MEFx
     
   }),
    nextExplosion = new Effect(70f, 160f, e -> {
-        color(Color.valueOf("ffffff"));
+        color(Color.valueOf("C84E1C"));
         stroke(e.fout() * 3f);
         float circleRad = 6f + e.finpow() * 250f;
         Lines.circle(e.x, e.y, circleRad);
         rand.setSeed(e.id);
-     
         for(int i = 0; i < 16; i++){
             float angle = rand.random(360f);
             float lenRand = rand.random(0.5f, 1f);
