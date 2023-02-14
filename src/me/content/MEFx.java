@@ -86,7 +86,7 @@ public class MEFx
         Lines.circle(e.x, e.y, circleRad);
         rand.setSeed(e.id);
      
-        color(Color.valueOf("FF9800"));     
+        color(Color.valueOf("737373"));     
         for(int i = 0; i < 16; i++){
             float angle = rand.random(360f);
             float lenRand = rand.random(0.5f, 1f);
@@ -118,7 +118,7 @@ public class MEFx
     color(Color.valueOf("001188"));
     float intensity = 8f;
     Fill.circle(e.x, e.y, 100f * e.fout());
-    Drawf.light(e.x, e.y, 100f * e.fout(), e.color, intensity);
+    Drawf.light(e.x, e.y, 100f, e.color, 100);
   }),
 
   finalEffect = new SeqEffect(firstShadow, lightningHitEffectOne, nextExplosion);
