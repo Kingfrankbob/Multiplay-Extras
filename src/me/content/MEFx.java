@@ -118,8 +118,9 @@ public class MEFx
   
   firstShadow = new Effect(100f, e -> {
 //     Drawf.shadow(e.x, e.y, 10f, 4f);
-    Draw.color(0, 0, 0, 0.4f * (1f * e.fout()));
-        Draw.rect("circle-shadow", e.x, e.y, 600f, 600f);
+    Draw.z(99);
+    Draw.color(0, 0, 0, 0.4f * (1f * e.fin()));
+        Draw.rect("circle-shadow", e.x, e.y, 500f, 500f);
         Draw.color();
     Log.info("Shadow Effect is running!!!");
     
