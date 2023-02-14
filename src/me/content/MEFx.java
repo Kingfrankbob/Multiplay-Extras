@@ -115,7 +115,8 @@ public class MEFx
   
   
   firstShadow = new Effect(100f, e -> {
-    Drawf.light(e.x, e.y, 100f, e.color, 100f);
+    color(Color.valueOf("010101"));
+    Drawf.light(e.x, e.y, 10f, e.color, 8f);
   }),
 
   finalEffect = new SeqEffect(firstShadow, lightningHitEffectOne, nextExplosion);
