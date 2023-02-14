@@ -75,7 +75,11 @@ public class MEFx
   
   lightningHitEffectOne = new Effect(200f, e -> {
     float randomAng = rand.random(360);
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 50f, (e.fout() * 400f) + 100f, (e.fin() * 360) + 20);    
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 50f, (e.fout() * 400f) + 100f, (e.fin() * 360) + 20);
+    Draw.z(99);
+    Draw.color(0, 0, 0, 0.4f * 1f);
+    Draw.rect("circle-shadow", e.x, e.y, (e.fout() * 200f) + 100f, (e.fout() * 200f) + 100f);
+    Draw.color();
   }),
   
    nextExplosion = new Effect(70f, 160f, e -> {
@@ -120,10 +124,8 @@ public class MEFx
 //     Drawf.shadow(e.x, e.y, 10f, 4f);
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * (1f * e.fin()));
-        Draw.rect("circle-shadow", e.x, e.y, 500f, 500f);
-        Draw.color();
-    Log.info("Shadow Effect is running!!!");
-    
+    Draw.rect("circle-shadow", e.x, e.y, 500f, 500f);
+    Draw.color();    
   }),
 
   finalEffect = new SeqEffect(firstShadow, lightningHitEffectOne, nextExplosion);
