@@ -86,7 +86,7 @@ public class MEFx
         Lines.circle(e.x, e.y, circleRad);
         rand.setSeed(e.id);
      
-        color(Color.valueOf("737373"));     
+        color(Color.valueOf("ffb361"));     
         for(int i = 0; i < 16; i++){
             float angle = rand.random(360f);
             float lenRand = rand.random(0.5f, 1f);
@@ -95,7 +95,7 @@ public class MEFx
      
         float intensity = 8f;
         float baseLifetime = 25f + intensity * 15f;
-        color(Color.valueOf("001108"));
+        color(Color.valueOf("737373"));     
         alpha(0.8f);
         for(int i = 0; i < 5; i++){
             rand.setSeed(e.id*2 + i);
