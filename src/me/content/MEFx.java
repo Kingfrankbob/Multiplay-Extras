@@ -117,10 +117,10 @@ public class MEFx
   
   
   firstShadow = new Effect(100f, e -> {
-    //Drawf.shadow(e.x, e.y, 10f, 1f);
-    Draw.color(0, 0, 0, 0.4f * 3f);
-        Draw.rect("circle-shadow", e.x, e.y, 10f * Draw.xscl, 10f * Draw.yscl);
-        Draw.color();
+    Drawf.shadow(e.x, e.y, 10f, 4f);
+//     Draw.color(0, 0, 0, 0.4f * 3f);
+//         Draw.rect("circle-shadow", e.x, e.y, 10f * Draw.xscl, 10f * Draw.yscl);
+//         Draw.color();
   }),
 
   finalEffect = new SeqEffect(firstShadow, lightningHitEffectOne, nextExplosion);
