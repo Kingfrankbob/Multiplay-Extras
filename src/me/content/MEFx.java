@@ -44,6 +44,8 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
+import java.util.*;
+
 import static mindustry.type.ItemStack.*;
 import static mindustry.type.ItemStack.with;
 import static arc.graphics.g2d.Draw.rect;
@@ -115,7 +117,10 @@ public class MEFx
   
   
   firstShadow = new Effect(100f, e -> {
-    Drawf.shadow(e.x, e.y, 10f, 1f);
+    //Drawf.shadow(e.x, e.y, 10f, 1f);
+    Draw.color(0, 0, 0, 0.4f * alpha);
+        Draw.rect("circle-shadow", e.x, e.y, 10f * Draw.xscl, 10f * Draw.yscl);
+        Draw.color();
   }),
 
   finalEffect = new SeqEffect(firstShadow, lightningHitEffectOne, nextExplosion);
