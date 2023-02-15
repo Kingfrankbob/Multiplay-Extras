@@ -73,7 +73,7 @@ public class MEFx
     Lines.circle(e.x, e.y, e.fslope() * 20f);
   }),
   
-  lightningHitEffectOne = new Effect(200f, e -> {
+  satelliteComingDown = new Effect(200f, e -> {
     float randomAng = rand.random(360);
     Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 50f, (e.fout() * 400f) + 100f, (e.fin() * 360));
     Draw.z(99);
@@ -127,18 +127,18 @@ public class MEFx
     Draw.rect("circle-shadow", e.x, e.y, 500f, 500f);
     Draw.color();    
   }),
-    fadeInView = new Effect(200f, e -> {
+    fadeInView = new Effect(100f, e -> {
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * 1f);
     Draw.rect("circle-shadow", e.x, e.y, 600f, 600f);
     Draw.color();
     Draw.z(110);
     Draw.alpha(e.fin());
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 50f) + 250f, (e.fout() * 100f) + 500f, (e.fin() * 360));
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 50f) + 250f, (e.fout() * 100f) + 500f, (e.fin() * 180));
     Draw.color();
   }),
 
-  finalEffect = new SeqEffect(firstShadow, fadeInView, lightningHitEffectOne, nextExplosion);
+  finalEffect = new SeqEffect(firstShadow, fadeInView, satelliteComingDown, nextExplosion);
                                      
 }
 
