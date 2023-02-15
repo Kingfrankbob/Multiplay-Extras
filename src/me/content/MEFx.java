@@ -75,10 +75,10 @@ public class MEFx
   
   satelliteComingDown = new Effect(200f, e -> {
     float randomAng = rand.random(360);
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(0.10f) * 200f), (e.fout(0.10f) * 400f), (e.fin() * 360));
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout(0.10f) * 200f) + 50f, (e.fout(0.10f) * 400f) + 100f, (e.fin() * 360));
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * 1f);
-    Draw.rect("circle-shadow", e.x, e.y, (e.fout() * 500f) + 100f, (e.fout() * 500f) + 100f);
+    Draw.rect("circle-shadow", e.x, e.y, (e.fout() * 500f) + 200f, (e.fout() * 500f) + 200f);
     Draw.color();
   }),
   
@@ -130,11 +130,11 @@ public class MEFx
     fadeInView = new Effect(100f, e -> {
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * 1f);
-    Draw.rect("circle-shadow", e.x, e.y, 600f, 600f);
+    Draw.rect("circle-shadow", e.x, e.y, 700f + (e.fout() * 100), 700f + (e.fout() * 100));
     Draw.color();
     Draw.z(110);
     Draw.alpha(e.fin());
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 100f) + 200f, (e.fout() * 200f) + 400f, (e.fin() * 180) + 180);
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 150f) + 250f, (e.fout() * 300f) + 500f, (e.fin() * 180) + 180);
     Draw.color();
   }),
 
