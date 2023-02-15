@@ -131,8 +131,10 @@ public class MEFx
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * 1f);
     Draw.rect("circle-shadow", e.x, e.y, 600f, 600f);
-    Draw.rect("me-satelliteCrash", e.x, e.y, 200f + 50f, 400f 100f, (e.fin() * 360));
     Draw.color();    
+    Draw.alpha(e.fin());
+    Draw.rect("me-satelliteCrash", e.x, e.y, 200f + 50f, 400f + 100f, (e.fin() * 360));
+    Draw.color();
   }),
 
   finalEffect = new SeqEffect(firstShadow, fadeInView, lightningHitEffectOne, nextExplosion);
