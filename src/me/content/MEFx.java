@@ -124,7 +124,7 @@ public class MEFx
 //     Drawf.shadow(e.x, e.y, 10f, 4f);
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * (1f * e.fin()));
-    Draw.rect("circle-shadow", e.x, e.y, 500f, 500f);
+    Draw.rect("circle-shadow", e.x, e.y, 800f, 800f);
     Draw.color();    
   }),
     fadeInView = new Effect(100f, e -> {
