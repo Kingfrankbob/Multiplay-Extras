@@ -75,7 +75,7 @@ public class MEFx
   
   lightningHitEffectOne = new Effect(200f, e -> {
     float randomAng = rand.random(360);
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 50f, (e.fout() * 400f) + 100f, (e.fin() * 360) + 20);
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 200f) + 50f, (e.fout() * 400f) + 100f, (e.fin() * 360));
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * 1f);
     Draw.rect("circle-shadow", e.x, e.y, (e.fout() * 500f) + 100f, (e.fout() * 500f) + 100f);
@@ -131,9 +131,10 @@ public class MEFx
     Draw.z(99);
     Draw.color(0, 0, 0, 0.4f * 1f);
     Draw.rect("circle-shadow", e.x, e.y, 600f, 600f);
-    Draw.color();    
+    Draw.color();
+    Draw.z(110);
     Draw.alpha(e.fin());
-    Draw.rect("me-satelliteCrash", e.x, e.y, 200f + 50f, 400f + 100f, (e.fin() * 360));
+    Draw.rect("me-satelliteCrash", e.x, e.y, 250f, 500f, (e.fin() * 360));
     Draw.color();
   }),
 
