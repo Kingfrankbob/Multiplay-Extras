@@ -134,7 +134,7 @@ public class MEFx
     Draw.color();
     Draw.z(110);
     Draw.alpha(e.fin());
-    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 50f) + 250f, (e.fout() * 100f) + 500f, (e.fin() * 180));
+    Draw.rect("me-satelliteCrash", e.x, e.y, (e.fout() * 50f) + 250f, (e.fout() * 100f) + 500f, (e.fin() * 180) + 180);
     Draw.color();
   }),
 
